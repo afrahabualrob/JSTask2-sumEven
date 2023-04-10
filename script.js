@@ -13,15 +13,12 @@ const handleCalculte = (e) => {
     .split(",")
     .filter((ele) => ele % 2 == 0)
     .reduce((acc, curr) => acc + Number(curr), 0);
-  console.log(res);
   result.innerHTML = e = res;
 };
 
 const clearFieldes = (e) => {
   e.preventDefault();
-  console.log("begfor", numbers.value);
   numbers.value = "";
   result.innerText = "";
-  console.log("After", numbers.value);
 };
 
