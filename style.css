@@ -4,6 +4,12 @@
   overflow: hidden;
 }
 
+.container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
 .inner {
   background-color: rgb(222, 239, 232);
   width: 500px;
@@ -12,6 +18,7 @@
   border-top-right-radius: 20px;
   box-shadow: 10px 10px 8px #419d9d;
   padding: 50px;
+  
 }
 
 .header {
@@ -21,16 +28,18 @@
   color: #757575;
   padding-bottom: 20px;
 }
+
 .s {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
+
 }
+
 .group {
   position: relative;
   margin-bottom: 45px;
 }
+
 input {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
@@ -40,6 +49,7 @@ input {
   border-bottom: 1px solid #757575;
   background-color: rgb(222, 239, 232);
 }
+
 input:focus {
   outline: none;
 }
@@ -98,7 +108,7 @@ input:focus ~ .bar:after {
   width: 50%;
 }
 
-/* HIGHLIGHTER ================================== */
+/* HIGHLIGHTER */
 .highlight {
   position: absolute;
   height: 60%;
@@ -144,7 +154,6 @@ button {
 @media screen and (max-width: 796px) {
   .container {
     width: 90%;
-    margin: auto;
   }
   .inner {
     width: 95%;

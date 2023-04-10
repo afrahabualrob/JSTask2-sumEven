@@ -4,7 +4,7 @@ const result = document.getElementById("result");
 const clear = document.getElementById("clear");
 
 calculateButton.addEventListener("click", (event) => handleCalculte(event));
-clear.addEventListener("click", (event) => clearFields(event));
+clear.addEventListener("click", (event) => clearFieldes(event));
 
 const handleCalculte = (e) => {
   e.preventDefault();
@@ -17,7 +17,7 @@ const handleCalculte = (e) => {
   result.innerHTML = e = res;
 };
 
-const clearFields = (e) => {
+const clearFieldes = (e) => {
   e.preventDefault();
   console.log("begfor", numbers.value);
   numbers.value = "";
@@ -25,4 +25,3 @@ const clearFields = (e) => {
   console.log("After", numbers.value);
 };
 
-// result.addEventListener("click",()=>{console.log("Hello")})
