@@ -1,0 +1,145 @@
+.container {
+  margin: auto;
+  width: 90%;
+  padding: 50px;
+}
+.inner {
+  background-color: rgb(222, 239, 232);
+  width: 500px;
+  margin: auto;
+  border-bottom-right-radius: 60px;
+  border-top-right-radius: 20px;
+  box-shadow: 10px 10px 8px #419d9d;
+  padding: 50px;
+}
+
+.header {
+  font-size: 22px;
+  font-family: monospace;
+  text-align: center;
+  color: #757575;
+  padding-bottom: 20px;
+}
+.s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: rgb(222, 239, 232);
+}
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #419d9d;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 315px;
+  height: 2px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #419d9d;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+button {
+  background-image: radial-gradient(
+    circle,
+    #399090,
+    rgb(190, 239, 219),
+    rgb(107, 167, 162)
+  );
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}
+
+.result{
+    width: 100px;
+    height: 30px;
+    margin:  auto;
+    margin-top: 40px;
+    border: #399090 2px solid;
+    border-radius: 8px;
+    color: #399090;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.inner{
+    
+}
