@@ -11,7 +11,7 @@
   height: 100vh;
 }
 .inner {
-  background-color: rgb(222, 239, 232);
+  background-color: rgb(242, 248, 245);
   width: 500px;
   margin: auto;
   border-bottom-right-radius: 60px;
@@ -47,7 +47,7 @@ input {
   width: 300px;
   border: none;
   border-bottom: 1px solid #757575;
-  background-color: rgb(222, 239, 232);
+  background-color: rgb(242, 248, 245);
 }
 
 input:focus {
